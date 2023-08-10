@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 209px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: black;
+  & img {
+    display: inline-block;
+    height: auto;
+    width: 122px;
+  }
+  & p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    margin: 10px 0 0 0;
+  }
+}

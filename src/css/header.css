@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+}
+.header img {
+  display: inline-block;
+}
+.header div a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px;
+  color: #ff6060;
+  margin-left: 57px;
+}/*# sourceMappingURL=header.css.map */
