@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+:export {
+  primary-color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+.error * {
+  display: inline-block;
+  color: #ff6060;
+  margin: 0;
+}
+.error .code {
+  font-size: 288px;
+  font-weight: 700;
+}
+.error .alert {
+  font-size: 36px;
+  font-weight: 500;
+}
+.error a {
+  font-size: 18px;
+  font-weight: 500;
+}/*# sourceMappingURL=error.css.map */
