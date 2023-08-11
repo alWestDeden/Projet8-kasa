@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/Projet8-kasa">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
