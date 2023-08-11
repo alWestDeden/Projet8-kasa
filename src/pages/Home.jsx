@@ -3,6 +3,7 @@ import '../style/global.scss'
 import Banner from '../components/Banner'
 import Card from '../components/Card'
 import apartments from '../assets/json/logements.json'
+// import useFetch from '../utils/useFetch'
 
 function Home() {
   return (
