@@ -1,0 +1,33 @@
+.slideshow {
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  & .pictures {
+    display: block;
+    object-fit: cover;
+    height: 415px;
+    width: 100%;
+  }
+  & .position {
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  & .leftArrow {
+    display: block;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+  }
+  & .rightArrow {
+    display: block;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+  }
+}

@@ -1,16 +1,20 @@
-.card {
+.link {
   position: relative;
   overflow: hidden;
+  display: block;
   border-radius: 10px;
 }
-.card img {
+.link .card {
+  border-radius: inherit;
+}
+.link .card img {
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
   height: 340px;
   border-radius: inherit;
 }
-.card .overlay {
+.link .card .overlay {
   position: absolute;
   -o-object-fit: contain;
      object-fit: contain;
@@ -25,7 +29,7 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
-.card .overlay p {
+.link .card .overlay p {
   display: inline-block;
   margin-left: 1em;
   color: white;

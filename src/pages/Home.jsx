@@ -3,7 +3,6 @@ import '../style/global.scss'
 import Banner from '../components/Banner'
 import Card from '../components/Card'
 import apartments from '../assets/json/logements.json'
-// import useFetch from '../utils/useFetch'
 
 function Home() {
   return (
@@ -13,6 +12,7 @@ function Home() {
         {apartments.map((apartment) => (
           <Card
             key={apartment.id}
+            id={apartment.id}
             title={apartment.title}
             cover={apartment.cover}
           />

@@ -1,0 +1,86 @@
+@import './variables.scss';
+
+.apartment {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color;
+  margin-top: 40px;
+  & .top-infos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 77px;
+    justify-content: space-between;
+    & .title-location {
+      & h1 {
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0;
+      }
+      & h2 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+    & .profile {
+      display: flex;
+      flex-direction: row;
+      & h2 {
+        display: inline-block;
+        width: min-content;
+        margin: 0 5px 0 0;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      & .photo {
+        display: block;
+        border-radius: 64px;
+        height: 64px;
+        width: 64px;
+      }
+    }
+  }
+  & .middle-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    height: 25px;
+    justify-content: space-between;
+    & .tags {
+      display: flex;
+      flex-direction: row;
+      & ul {
+        display: inline-block;
+        padding: 0;
+        & li {
+          display: inline-block;
+          color: white;
+          margin-right: 10px;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 5px 30px;
+          background-color: $primary-color;
+          border-radius: 10px;
+        }
+      }
+    }
+    & .rating {
+      & img {
+        height: 24px;
+        margin-left: 20px;
+      }
+    }
+  }
+  & .bottom-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    & .collapse {
+      width: 48%;
+      margin: 0;
+    }
+  }
+}

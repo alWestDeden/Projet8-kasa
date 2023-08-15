@@ -25,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 52px;
+  height: 32px;
   background-color: #ff6060;
   border-radius: 10px;
   padding: 10px 20px 10px 10px;
@@ -61,6 +61,9 @@
 .collapse .contentText p {
   margin: 0;
   padding: 15px;
+}
+.collapse .contentText ul {
+  padding: 0 15px;
 }
 .collapse .contentText .equipment {
   list-style-type: none;
