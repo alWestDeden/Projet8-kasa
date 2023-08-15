@@ -2,10 +2,21 @@
 
 $primary-color: #ff6060;
 $secondary-color: #f6f6f6;
+$light-color: white;
+$dark-color: black;
 $font-family: 'Montserrat', sans-serif;
 
-:export {
-  primary-color: $primary-color;
-  secondary-color: $secondary-color;
-  font-family: $font-family;
+@mixin font400($size) {
+  font-size: $size + px;
+  font-weight: 500;
+}
+
+@mixin font500($size) {
+  font-size: $size + px;
+  font-weight: 500;
+}
+
+@mixin font700($size) {
+  font-size: $size + px;
+  font-weight: 500;
 }

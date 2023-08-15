@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 .footer {
   display: flex;
   flex-direction: column;
@@ -14,9 +15,8 @@
   width: 122px;
 }
 .footer p {
-  font-family: "Montserrat";
-  font-weight: 500;
   font-size: 24px;
+  font-weight: 500;
   color: white;
   margin: 10px 0 0 0;
 }/*# sourceMappingURL=footer.css.map */

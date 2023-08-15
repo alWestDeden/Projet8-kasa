@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 .link {
   position: relative;
   overflow: hidden;
@@ -34,6 +35,6 @@
   margin-left: 1em;
   color: white;
   inset: 0;
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
 }/*# sourceMappingURL=card.css.map */

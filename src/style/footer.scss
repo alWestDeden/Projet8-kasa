@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -6,17 +8,15 @@
   height: 209px;
   width: 100%;
   margin-top: 30px;
-  background-color: black;
+  background-color: $dark-color;
   & img {
     display: inline-block;
     height: auto;
     width: 122px;
   }
   & p {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 24px;
-    color: white;
+    @include font500(24);
+    color: $light-color;
     margin: 10px 0 0 0;
   }
 }
