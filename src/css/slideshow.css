@@ -32,4 +32,39 @@
   position: absolute;
   right: 20px;
   cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  .slideshow .pictures {
+    height: 300px;
+  }
+  .slideshow .position {
+    bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .slideshow .leftArrow {
+    height: 40px;
+    right: 15px;
+  }
+  .slideshow .rightArrow {
+    height: 40px;
+    right: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .slideshow .pictures {
+    height: 255px;
+  }
+  .slideshow .position {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .slideshow .leftArrow {
+    height: 20px;
+    right: 10px;
+  }
+  .slideshow .rightArrow {
+    height: 20px;
+    right: 10px;
+  }
 }/*# sourceMappingURL=slideshow.css.map */

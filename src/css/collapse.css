@@ -64,4 +64,47 @@
 }
 .collapse .hideContentText {
   max-height: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .collapse {
+    margin-top: 20px;
+  }
+  .collapse .layoutPurpose {
+    border-radius: 5px;
+  }
+  .collapse .title {
+    height: 20px;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  .collapse .title .titleText {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .collapse .title .arrowOpen {
+    width: 18px;
+  }
+  .collapse .contentText {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .collapse .title {
+    height: 14px;
+  }
+  .collapse .title .titleText {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .collapse .title .arrowOpen {
+    width: 16px;
+  }
+  .collapse .contentText {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=collapse.css.map */

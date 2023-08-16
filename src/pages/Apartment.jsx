@@ -32,32 +32,32 @@ function Apartment() {
     <section className="apartment">
       <Slideshow pictures={pictures} title={title} />
       <div className="top-infos">
-        <div className="title-location">
-          <h1>{title}</h1>
-          <h2>{location}</h2>
+        <div className="left-infos">
+          <div className="title-location">
+            <h1>{title}</h1>
+            <h2>{location}</h2>
+            <ul className="tags">
+              {tags.map((tag) => (
+                <li key={tag}>{tag}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="profile">
-          <h2>{host.name}</h2>
-          <img className="photo" src={host.picture} alt={host.name} />
-          <div></div>
-        </div>
-      </div>
-      <div className="middle-infos">
-        <div className="tags">
-          <ul>
-            {tags.map((tag) => (
-              <li key={tag}>{tag}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="rating">
-          {stars.map((star, i) =>
-            star ? (
-              <img key={i} src={fullStar} alt="note" />
-            ) : (
-              <img key={i} src={emptyStar} alt="note" />
-            ),
-          )}
+        <div className="right-infos">
+          <div className="profile">
+            <h2>{host.name}</h2>
+            <img className="photo" src={host.picture} alt={host.name} />
+            <div></div>
+          </div>
+          <div className="rating">
+            {stars.map((star, i) =>
+              star ? (
+                <img key={i} src={fullStar} alt="note" />
+              ) : (
+                <img key={i} src={emptyStar} alt="note" />
+              ),
+            )}
+          </div>
         </div>
       </div>
       <div className="bottom-infos">

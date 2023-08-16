@@ -31,4 +31,37 @@
     right: 20px;
     cursor: pointer;
   }
+  @include devices(tablet) {
+    & .pictures {
+      height: 300px;
+    }
+    & .position {
+      bottom: 10px;
+      @include font500(16);
+    }
+    & .leftArrow {
+      height: 40px;
+      right: 15px;
+    }
+    & .rightArrow {
+      height: 40px;
+      right: 15px;
+    }
+  }
+  @include devices(mobile) {
+    & .pictures {
+      height: 255px;
+    }
+    & .position {
+      @include font500(14);
+    }
+    & .leftArrow {
+      height: 20px;
+      right: 10px;
+    }
+    & .rightArrow {
+      height: 20px;
+      right: 10px;
+    }
+  }
 }

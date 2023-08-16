@@ -3,60 +3,35 @@
   display: flex;
   flex-direction: column;
   color: #ff6060;
-  margin-top: 40px;
+  margin: 40px 50px 0 50px;
 }
 .apartment .top-infos {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  height: 77px;
   justify-content: space-between;
+  margin-top: 20px;
 }
-.apartment .top-infos .title-location h1 {
+.apartment .top-infos .left-infos {
+  display: flex;
+  flex-direction: column;
+}
+.apartment .top-infos .left-infos .title-location h1 {
   font-size: 36px;
   font-weight: 500;
   margin: 0;
 }
-.apartment .top-infos .title-location h2 {
+.apartment .top-infos .left-infos .title-location h2 {
   font-size: 18px;
   font-weight: 500;
   margin: 0;
 }
-.apartment .top-infos .profile {
+.apartment .top-infos .left-infos .title-location .tags {
   display: flex;
   flex-direction: row;
-}
-.apartment .top-infos .profile h2 {
-  display: inline-block;
-  width: -moz-min-content;
-  width: min-content;
-  margin: 0 5px 0 0;
-  font-size: 18px;
-  font-weight: 500;
-}
-.apartment .top-infos .profile .photo {
-  display: block;
-  border-radius: 64px;
-  height: 64px;
-  width: 64px;
-}
-.apartment .middle-infos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-  height: 25px;
-  justify-content: space-between;
-}
-.apartment .middle-infos .tags {
-  display: flex;
-  flex-direction: row;
-}
-.apartment .middle-infos .tags ul {
   display: inline-block;
   padding: 0;
 }
-.apartment .middle-infos .tags ul li {
+.apartment .top-infos .left-infos .title-location .tags li {
   display: inline-block;
   color: white;
   margin-right: 10px;
@@ -66,7 +41,33 @@
   background-color: #ff6060;
   border-radius: 10px;
 }
-.apartment .middle-infos .rating img {
+.apartment .top-infos .right-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 108px;
+}
+.apartment .top-infos .right-infos .profile {
+  display: flex;
+  flex-direction: row;
+}
+.apartment .top-infos .right-infos .profile h2 {
+  display: inline-block;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 5px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.apartment .top-infos .right-infos .profile .photo {
+  display: block;
+  right: 0;
+  border-radius: 64px;
+  height: 64px;
+  width: 64px;
+}
+.apartment .top-infos .right-infos .rating img {
   height: 24px;
   margin-left: 20px;
 }
@@ -74,9 +75,122 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .apartment .bottom-infos .collapse {
   width: 48%;
   margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .apartment {
+    margin: 20px 10px 0 10px;
+  }
+  .apartment .top-infos {
+    flex-direction: row;
+    margin-top: 15px;
+  }
+  .apartment .top-infos .left-infos .title-location h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .apartment .top-infos .left-infos .title-location h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .apartment .top-infos .left-infos .title-location .tags {
+    margin-top: 10px;
+  }
+  .apartment .top-infos .left-infos .title-location .tags li {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 20px;
+  }
+  .apartment .top-infos .right-infos {
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .apartment .top-infos .right-infos .profile {
+    display: flex;
+    flex-direction: row;
+  }
+  .apartment .top-infos .right-infos .profile h2 {
+    margin: 0 5px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .apartment .top-infos .right-infos .profile .photo {
+    border-radius: 48px;
+    height: 48px;
+    width: 48px;
+  }
+  .apartment .top-infos .right-infos .rating {
+    margin-top: 25px;
+  }
+  .apartment .top-infos .right-infos .rating img {
+    height: 16px;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .apartment {
+    margin: 20px 10px 0 10px;
+  }
+  .apartment .top-infos {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .apartment .top-infos .left-infos .title-location h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .apartment .top-infos .left-infos .title-location h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .apartment .top-infos .left-infos .title-location .tags {
+    margin-top: 5px;
+  }
+  .apartment .top-infos .left-infos .title-location .tags li {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 15px;
+  }
+  .apartment .top-infos .right-infos {
+    flex-direction: row-reverse;
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .apartment .top-infos .right-infos .profile {
+    display: flex;
+    flex-direction: row;
+  }
+  .apartment .top-infos .right-infos .profile h2 {
+    margin: 0 2px 0 0;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .apartment .top-infos .right-infos .profile .photo {
+    border-radius: 32px;
+    height: 32px;
+    width: 32px;
+  }
+  .apartment .top-infos .right-infos .rating img {
+    height: 12px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .apartment .bottom-infos {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .apartment .bottom-infos .collapse {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=Apartment.css.map */

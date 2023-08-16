@@ -20,3 +20,20 @@
     margin: 10px 0 0 0;
   }
 }
+@include devices(tablet) {
+  .footer {
+    margin-top: 20px;
+    & p {
+      @include font500(16);
+    }
+  }
+}
+@include devices(mobile) {
+  .footer {
+    height: 300px;
+    & p {
+      @include font500(12);
+      width: 100px;
+    }
+  }
+}

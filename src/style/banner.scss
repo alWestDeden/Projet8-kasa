@@ -5,7 +5,7 @@
   width: 100%;
   height: 223px;
   border-radius: 25px;
-  margin-top: 20px;
+  margin-top: 30px;
   & img {
     display: inline-block;
     object-fit: cover;
@@ -27,6 +27,26 @@
       display: inline-block;
       color: $light-color;
       @include font500(48);
+    }
+  }
+  @include devices(tablet) {
+    height: 148px;
+    border-radius: 10px;
+    margin-top: 20px;
+    & .overlay {
+      & p {
+        padding: 10px;
+        @include font500(32);
+      }
+    }
+  }
+  @include devices(mobile) {
+    height: 111px;
+    & .overlay {
+      & p {
+        padding: 10px;
+        @include font500(24);
+      }
     }
   }
 }

@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   height: 600px;
+  text-align: center;
   & * {
     display: inline-block;
     color: $primary-color;
@@ -19,5 +20,35 @@
   }
   & a {
     @include font500(18);
+  }
+}
+@include devices(tablet) {
+  .error {
+    padding: 50px 12px;
+    height: 400px;
+    & .code {
+      @include font700(186);
+    }
+    & .alert {
+      @include font500(24);
+    }
+    & a {
+      @include font500(16);
+    }
+  }
+}
+@include devices(mobile) {
+  .error {
+    padding: 100px 25px;
+    height: 300px;
+    & .code {
+      @include font700(96);
+    }
+    & .alert {
+      @include font500(18);
+    }
+    & a {
+      @include font500(14);
+    }
   }
 }

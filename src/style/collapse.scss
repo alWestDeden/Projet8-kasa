@@ -64,3 +64,43 @@
     max-height: 0;
   }
 }
+@include devices(tablet) {
+  .collapse {
+    margin-top: 20px;
+    & .layoutPurpose {
+      border-radius: 5px;
+    }
+    & .title {
+      height: 20px;
+      border-radius: 5px;
+      padding: 8px;
+      & .titleText {
+        @include font500(16);
+      }
+      & .arrowOpen {
+        width: 18px;
+      }
+    }
+    & .contentText {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      @include font400(14);
+    }
+  }
+}
+@include devices(mobile) {
+  .collapse {
+    & .title {
+      height: 14px;
+      & .titleText {
+        @include font500(14);
+      }
+      & .arrowOpen {
+        width: 16px;
+      }
+    }
+    & .contentText {
+      @include font400(12);
+    }
+  }
+}
