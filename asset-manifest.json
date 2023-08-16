@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Projet8-kasa/static/css/main.eb38cb91.chunk.css",
-    "main.js": "/Projet8-kasa/static/js/main.50343e81.chunk.js",
-    "main.js.map": "/Projet8-kasa/static/js/main.50343e81.chunk.js.map",
+    "main.css": "/Projet8-kasa/static/css/main.252d52d8.chunk.css",
+    "main.js": "/Projet8-kasa/static/js/main.3990b9f3.chunk.js",
+    "main.js.map": "/Projet8-kasa/static/js/main.3990b9f3.chunk.js.map",
     "runtime-main.js": "/Projet8-kasa/static/js/runtime-main.ebd73b0b.js",
     "runtime-main.js.map": "/Projet8-kasa/static/js/runtime-main.ebd73b0b.js.map",
     "static/js/2.9905ece0.chunk.js": "/Projet8-kasa/static/js/2.9905ece0.chunk.js",
     "static/js/2.9905ece0.chunk.js.map": "/Projet8-kasa/static/js/2.9905ece0.chunk.js.map",
     "index.html": "/Projet8-kasa/index.html",
-    "static/css/main.eb38cb91.chunk.css.map": "/Projet8-kasa/static/css/main.eb38cb91.chunk.css.map",
+    "static/css/main.252d52d8.chunk.css.map": "/Projet8-kasa/static/css/main.252d52d8.chunk.css.map",
     "static/js/2.9905ece0.chunk.js.LICENSE.txt": "/Projet8-kasa/static/js/2.9905ece0.chunk.js.LICENSE.txt",
     "static/media/Mountains.26bc5f49.jpeg": "/Projet8-kasa/static/media/Mountains.26bc5f49.jpeg",
     "static/media/RedLogo.a5c76d8a.svg": "/Projet8-kasa/static/media/RedLogo.a5c76d8a.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.ebd73b0b.js",
     "static/js/2.9905ece0.chunk.js",
-    "static/css/main.eb38cb91.chunk.css",
-    "static/js/main.50343e81.chunk.js"
+    "static/css/main.252d52d8.chunk.css",
+    "static/js/main.3990b9f3.chunk.js"
   ]
 }
