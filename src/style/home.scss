@@ -6,6 +6,7 @@
   margin: 30px 50px 0 50px;
   & .apartments {
     display: grid;
+    // apartments' cards on 3 columns in desktop
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     background-color: $secondary-color;
@@ -18,6 +19,7 @@
   .home {
     margin: 0 10px 0 10px;
     & .apartments {
+      // apartments' cards on 2 columns in tablet
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
       background-color: $secondary-color;
@@ -30,6 +32,7 @@
   .home {
     margin: 0 10px 0 10px;
     & .apartments {
+      // apartments' cards on 1 columns in mobile
       grid-template-columns: repeat(1, 1fr);
       background-color: $light-color;
     }

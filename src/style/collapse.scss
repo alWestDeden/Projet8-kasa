@@ -30,17 +30,17 @@
       margin: 0;
       @include font500(24);
     }
-    & .arrowOpen {
+    & .arrow-open {
       display: block;
       width: 24px;
       transform: rotate(0turn);
       transition: transform 300ms ease-in-out;
     }
-    & .arrowClose {
+    & .arrow-close {
       transform: rotate(0.5turn);
     }
   }
-  & .contentText {
+  & .content-text {
     overflow: hidden;
     background-color: $secondary-color;
     color: $primary-color;
@@ -60,7 +60,7 @@
       list-style-type: none;
     }
   }
-  & .hideContentText {
+  & .hide-content-text {
     max-height: 0;
   }
 }
@@ -77,11 +77,11 @@
       & .titleText {
         @include font500(16);
       }
-      & .arrowOpen {
+      & .arrow-open {
         width: 18px;
       }
     }
-    & .contentText {
+    & .content-text {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       @include font400(14);
@@ -95,11 +95,11 @@
       & .titleText {
         @include font500(14);
       }
-      & .arrowOpen {
+      & .arrow-open {
         width: 16px;
       }
     }
-    & .contentText {
+    & .content-text {
       @include font400(12);
     }
   }

@@ -6,6 +6,7 @@ $light-color: white;
 $dark-color: black;
 $font-family: 'Montserrat', sans-serif;
 
+// mixins for various font weight
 @mixin font400($size) {
   font-size: $size + px;
   font-weight: 500;
@@ -21,6 +22,7 @@ $font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
+// media queries
 @mixin devices($breakpoint) {
   @if $breakpoint == mobile {
     @media only screen and (max-width: 480px) {

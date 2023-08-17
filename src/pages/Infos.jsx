@@ -3,6 +3,7 @@ import Collapse from '../components/Collapse'
 import '../style/Infos.scss'
 
 function Infos() {
+  // create an object containing all the collapsable infos
   const infos = [
     {
       titleText: 'Fiabilité',
@@ -31,6 +32,7 @@ function Infos() {
         <Banner landscape="landscape_2" />
       </div>
       <div className="infos">
+        {/* generate the various collapse components */}
         {infos.map((info) => (
           <Collapse
             key={info.titleText}

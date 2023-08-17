@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Card({ id, title, cover }) {
   return (
+    // link to apartment's details
     <Link className="link" to={`/apartment/${id}`}>
       <div className="card">
         <img src={cover} alt={title} />

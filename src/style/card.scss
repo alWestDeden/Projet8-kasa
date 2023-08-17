@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .link {
+  // position: : relative for positioning the overlay
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -15,11 +16,13 @@
       position: absolute;
       z-index: 1;
       inset: 0;
+      // create a gradient overlay to allow better contrast with the white text
       background: linear-gradient(
         0deg,
         rgba(00, 00, 00, 0.4),
         rgba(255, 255, 255, 0.2) 50%
       );
+      // following parameters to position the text overlay
       display: flex;
       align-items: flex-end;
       justify-content: flex-start;

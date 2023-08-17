@@ -2,6 +2,7 @@
 
 .slideshow {
   display: flex;
+  // position: relative for positioning the navigation arrow and the position index text
   position: relative;
   align-items: center;
   overflow: hidden;
@@ -12,6 +13,7 @@
     height: 415px;
     width: 100%;
   }
+  // position index text
   & .position {
     display: inline-block;
     position: absolute;
@@ -19,6 +21,7 @@
     color: $light-color;
     @include font500(18);
   }
+  // navigation arrows
   & .leftArrow {
     display: block;
     position: absolute;

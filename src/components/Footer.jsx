@@ -5,6 +5,7 @@ import '../style/footer.scss'
 function Footer() {
   return (
     <footer className="footer">
+      {/* link to the Home's URL */}
       <Link to="/">
         <img src={WhiteLogo} alt="kasa logo" />
       </Link>

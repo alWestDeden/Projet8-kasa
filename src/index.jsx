@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* paths of the various pages */}
     <Router basename="/Projet8-kasa">
       <Header />
       <Routes>
@@ -22,6 +23,7 @@ ReactDOM.render(
         <Route path="/apartment/:id" element={<Apartment />} />
         <Route path="/infos" element={<Infos />} />
         <Route path="/404" element={<Error />} />
+        {/* trick to allow an Error page on GitHub Pages (with some JavaScript linked to index.html) */}
         <Route path="*" element={<Navigate replace to="/404" />} />
       </Routes>
       <Footer />

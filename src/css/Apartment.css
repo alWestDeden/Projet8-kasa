@@ -44,9 +44,9 @@
 .apartment .top-infos .right-infos {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-end;
-  height: 108px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .apartment .top-infos .right-infos .profile {
   display: flex;
@@ -67,7 +67,12 @@
   height: 64px;
   width: 64px;
 }
+.apartment .top-infos .right-infos .rating {
+  white-space: nowrap;
+  margin-top: 15px;
+}
 .apartment .top-infos .right-infos .rating img {
+  display: inline-block;
   height: 24px;
   margin-left: 20px;
 }
@@ -87,7 +92,6 @@
     margin: 20px 10px 0 10px;
   }
   .apartment .top-infos {
-    flex-direction: row;
     margin-top: 15px;
   }
   .apartment .top-infos .left-infos .title-location h1 {
@@ -100,45 +104,31 @@
     font-weight: 500;
     margin-top: 10px;
   }
-  .apartment .top-infos .left-infos .title-location .tags {
-    margin-top: 10px;
-  }
   .apartment .top-infos .left-infos .title-location .tags li {
+    margin-top: 10px;
     font-size: 12px;
     font-weight: 500;
     padding: 5px 20px;
   }
-  .apartment .top-infos .right-infos {
-    align-items: center;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .apartment .top-infos .right-infos .profile {
-    display: flex;
-    flex-direction: row;
-  }
   .apartment .top-infos .right-infos .profile h2 {
     margin: 0 5px 0 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
   }
   .apartment .top-infos .right-infos .profile .photo {
-    border-radius: 48px;
-    height: 48px;
-    width: 48px;
+    border-radius: 56px;
+    height: 56px;
+    width: 56px;
   }
   .apartment .top-infos .right-infos .rating {
-    margin-top: 25px;
+    margin-top: 18px;
   }
   .apartment .top-infos .right-infos .rating img {
-    height: 16px;
+    height: 18px;
     margin-left: 10px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .apartment {
-    margin: 20px 10px 0 10px;
-  }
   .apartment .top-infos {
     flex-direction: column;
     margin-top: 10px;
@@ -150,10 +140,9 @@
   .apartment .top-infos .left-infos .title-location h2 {
     font-size: 14px;
     font-weight: 500;
-    margin-top: 10px;
   }
   .apartment .top-infos .left-infos .title-location .tags {
-    margin-top: 5px;
+    margin: 0;
   }
   .apartment .top-infos .left-infos .title-location .tags li {
     font-size: 10px;
@@ -162,13 +151,7 @@
   }
   .apartment .top-infos .right-infos {
     flex-direction: row-reverse;
-    align-items: center;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .apartment .top-infos .right-infos .profile {
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
   }
   .apartment .top-infos .right-infos .profile h2 {
     margin: 0 2px 0 0;
@@ -180,10 +163,12 @@
     height: 32px;
     width: 32px;
   }
+  .apartment .top-infos .right-infos .rating {
+    margin: 0;
+  }
   .apartment .top-infos .right-infos .rating img {
     height: 12px;
-    margin-left: 0;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
   }
   .apartment .bottom-infos {
     flex-direction: column;

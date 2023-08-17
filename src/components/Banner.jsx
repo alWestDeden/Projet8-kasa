@@ -5,6 +5,7 @@ import '../style/banner.scss'
 function Banner({ landscape }) {
   return (
     <div className="banner">
+      {/* generate a banner with text for the Home's banner (property === landscape_1) */}
       {landscape === 'landscape_1' ? (
         <>
           <img src={SeaShore} alt="un paysage" />
@@ -13,6 +14,7 @@ function Banner({ landscape }) {
           </div>
         </>
       ) : (
+        // generate a banner without text for the Info's banner (property !== landscape_1)
         <>
           <img src={Mountains} alt="un paysage" />
           <div className="overlay"></div>

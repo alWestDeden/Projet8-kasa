@@ -32,16 +32,16 @@
   font-size: 24px;
   font-weight: 500;
 }
-.collapse .title .arrowOpen {
+.collapse .title .arrow-open {
   display: block;
   width: 24px;
   transform: rotate(0turn);
   transition: transform 300ms ease-in-out;
 }
-.collapse .title .arrowClose {
+.collapse .title .arrow-close {
   transform: rotate(0.5turn);
 }
-.collapse .contentText {
+.collapse .content-text {
   overflow: hidden;
   background-color: #f6f6f6;
   color: #ff6060;
@@ -52,17 +52,17 @@
   max-height: 300px;
   transition: max-height 400ms ease-in-out;
 }
-.collapse .contentText p {
+.collapse .content-text p {
   margin: 0;
   padding: 15px;
 }
-.collapse .contentText ul {
+.collapse .content-text ul {
   padding: 0 15px;
 }
-.collapse .contentText .equipment {
+.collapse .content-text .equipment {
   list-style-type: none;
 }
-.collapse .hideContentText {
+.collapse .hide-content-text {
   max-height: 0;
 }
 
@@ -82,10 +82,10 @@
     font-size: 16px;
     font-weight: 500;
   }
-  .collapse .title .arrowOpen {
+  .collapse .title .arrow-open {
     width: 18px;
   }
-  .collapse .contentText {
+  .collapse .content-text {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     font-size: 14px;
@@ -100,10 +100,10 @@
     font-size: 14px;
     font-weight: 500;
   }
-  .collapse .title .arrowOpen {
+  .collapse .title .arrow-open {
     width: 16px;
   }
-  .collapse .contentText {
+  .collapse .content-text {
     font-size: 12px;
     font-weight: 500;
   }
