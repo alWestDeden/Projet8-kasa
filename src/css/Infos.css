@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 .infos {
+  margin: 0 50px;
+}
+.infos .collapses {
   margin: 50px 100px;
 }
 
 @media only screen and (max-width: 1024px) {
   .infos {
+    margin: 0 10px;
+  }
+  .infos .collapses {
     margin: 20px 20px 0 20px;
     padding: 0;
   }
 }
 @media only screen and (max-width: 480px) {
-  .infos {
+  .infos .collapses {
     margin: 20px 0 0 0;
     padding: 0;
   }

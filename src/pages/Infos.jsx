@@ -27,11 +27,11 @@ function Infos() {
     },
   ]
   return (
-    <div>
+    <div className="infos">
       <div>
         <Banner landscape="landscape_2" />
       </div>
-      <div className="infos">
+      <div className="collapses">
         {/* generate the various collapse components */}
         {infos.map((info) => (
           <Collapse

@@ -1,17 +1,25 @@
 @import './variables.scss';
 
 .infos {
-  margin: 50px 100px;
+  margin: 0 50px;
+  .collapses {
+    margin: 50px 100px;
+  }
 }
 @include devices(tablet) {
   .infos {
-    margin: 20px 20px 0 20px;
-    padding: 0;
+    margin: 0 10px;
+    .collapses {
+      margin: 20px 20px 0 20px;
+      padding: 0;
+    }
   }
 }
 @include devices(mobile) {
   .infos {
-    margin: 20px 0 0 0;
-    padding: 0;
+    .collapses {
+      margin: 20px 0 0 0;
+      padding: 0;
+    }
   }
 }
