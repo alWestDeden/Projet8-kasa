@@ -1,11 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Apartment from './pages/Apartment'
 import Error from './pages/Error'
@@ -22,10 +17,7 @@ ReactDOM.render(
         <Route path="/" element={<Home />} />
         <Route path="/apartment/:id" element={<Apartment />} />
         <Route path="/infos" element={<Infos />} />
-        {/* <Route path="*" element={<Error />} /> */}
-        <Route path="/404" element={<Error />} />
-        {/* trick to allow an Error page on GitHub Pages (with some JavaScript linked to index.html) */}
-        <Route path="*" element={<Navigate replace to="/404" />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>
