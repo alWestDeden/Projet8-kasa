@@ -26,23 +26,30 @@ function Slideshow({ pictures, title }) {
     <div className="slideshow">
       {/* render the picture corresponding to picture's index */}
       <img className="pictures" src={pictures[pictureIndex]} alt={title} />
-      <p className="position">
-        {pictureIndex + 1}/{pictures.length}
-      </p>
-      <img
-        className="leftArrow"
-        src={leftArrow}
-        // on click run backward function
-        onClick={() => prevPicture()}
-        alt="navigation vers précédente"
-      />
-      <img
-        className="rightArrow"
-        src={rightArrow}
-        // on click run forward function
-        onClick={() => nextPicture()}
-        alt="navigation vers suivante"
-      />
+      {/* if there's only one picture in the gallery don't show the navigation arrows and the slideshow position's */}
+      {pictures.length > 1 ? (
+        <>
+          <p className="position">
+            {pictureIndex + 1}/{pictures.length}
+          </p>
+          <img
+            className="leftArrow"
+            src={leftArrow}
+            // on click run backward function
+            onClick={() => prevPicture()}
+            alt="navigation vers précédente"
+          />
+          <img
+            className="rightArrow"
+            src={rightArrow}
+            // on click run forward function
+            onClick={() => nextPicture()}
+            alt="navigation vers suivante"
+          />
+        </>
+      ) : (
+        <p></p>
+      )}
     </div>
   )
 }
